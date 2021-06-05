@@ -9,6 +9,7 @@ import java.util.Scanner;
 
 public class App {
     public static void main(String[] args){
+
         Scanner in = new Scanner(System.in);
         System.out.print("What is your current age? ");
         String cAge = in.nextLine();
@@ -20,6 +21,5 @@ public class App {
         System.out.println("You have " + diff + " years left until you can retire.");
         int year = Year.now().getValue(), yearRetire = year + diff;
         System.out.print("It's " + year + ", so you can retire in " + yearRetire + ".");
-
     }
 }
