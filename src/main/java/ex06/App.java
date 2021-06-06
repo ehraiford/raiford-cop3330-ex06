@@ -11,12 +11,15 @@ public class App {
     public static void main(String[] args){
 
         Scanner in = new Scanner(System.in);
+
         System.out.print("What is your current age? ");
         String cAge = in.nextLine();
         int intCAge = Integer.parseInt(cAge);
+
         System.out.print("At what age would you like to retire? ");
         String rAge = in.nextLine();
         int intRAge = Integer.parseInt(rAge);
+
         int diff = intRAge - intCAge;
         System.out.println("You have " + diff + " years left until you can retire.");
         int year = Year.now().getValue(), yearRetire = year + diff;
